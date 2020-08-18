@@ -17,3 +17,14 @@ def twoNumberSum2(array, targetSum):
         else:
             nums.add(num)
     return []
+
+
+def twoNumberSum3(array, targetSum):
+    # Write your code here.
+    nums = {}
+    for num in array:
+        if targetSum - num in nums:
+            return [num, targetSum - num]
+        else:
+            nums[num] = True
+    return []
