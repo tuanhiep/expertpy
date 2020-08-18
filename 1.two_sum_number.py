@@ -6,3 +6,14 @@ def twoNumberSum1(array, targetSum):
                 return [array[i], array[j]]
 
     return []
+
+
+def twoNumberSum2(array, targetSum):
+    # Write your code here.
+    nums = set()
+    for num in array:
+        if targetSum - num in nums:
+            return [num, targetSum - num]
+        else:
+            nums.add(num)
+    return []
