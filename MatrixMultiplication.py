@@ -44,8 +44,6 @@ print(user)
 print(sys)
 print(total)
 
-
-
 fig, ax = plt.subplots()
 ax.set_prop_cycle(color=['red', 'green', 'blue'])
 plt.plot(sizes, user)
