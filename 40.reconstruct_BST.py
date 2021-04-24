@@ -57,6 +57,7 @@ def reconstructBst(preOrderTraversalValues):
     rightSubTree = reconstructBst(preOrderTraversalValues[rightSubTreeRootIdx:])
     return BST(currentValue, leftSubTree, rightSubTree)
 
+
 # Solution 3
 
 # This is an input class. Do not edit.
