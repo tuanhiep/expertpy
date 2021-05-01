@@ -26,4 +26,5 @@ def sumOfLinkedLists(linkedListOne, linkedListTwo):
         nodeOne = nodeOne.next if nodeOne is not None else None
         nodeTwo = nodeTwo.next if nodeTwo is not None else None
 
+
     return newList.next
