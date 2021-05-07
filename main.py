@@ -14,3 +14,8 @@ if __name__ == '__main__':
     print_hi('Tuan Hiep TRAN')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+fruits = ['apple', 'banana', 'cherry', 'cherry', 'cherry']
+
+x = fruits.index("cherry1")
+print(x)
