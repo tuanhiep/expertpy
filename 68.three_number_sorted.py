@@ -17,3 +17,18 @@ def threeNumberSort(array, order):
             currentIdx = numElementBefore + n
             array[currentIdx] = value
     return array
+
+
+# Solution 2
+
+def threeNumberSort(array, order):
+    # Write your code here.
+    currentPointer = 0
+    for idx in range(len(order)):
+        currentValue = order[idx]
+        for i in range(len(array)):
+            if array[i] == currentValue:
+                array[currentPointer], array[i] = array[i], array[currentPointer]
+                currentPointer += 1
+
+        return array
