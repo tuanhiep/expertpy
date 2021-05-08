@@ -13,9 +13,19 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('Tuan Hiep TRAN')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# initializing string
+test_string = "geekforgeeks"
 
-fruits = ['apple', 'banana', 'cherry', 'cherry', 'cherry']
+# printing original string
+print("The original string : " + str(test_string))
+print(sorted(test_string))
+# using join() + sorted()
+# Sorting a string
+res = ''.join(sorted(test_string))
 
-x = fruits.index("cherry1")
-print(x)
+# print result
+print("String after sorting : " + str(res))
+
+dict = {'Sex': 'female', 'Age': 7, 'Name': 'Zara'}
+print (list(dict.values()))
+print (dict.values())
