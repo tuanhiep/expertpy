@@ -13,19 +13,4 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('Tuan Hiep TRAN')
 
-# initializing string
-test_string = "geekforgeeks"
-
-# printing original string
-print("The original string : " + str(test_string))
-print(sorted(test_string))
-# using join() + sorted()
-# Sorting a string
-res = ''.join(sorted(test_string))
-
-# print result
-print("String after sorting : " + str(res))
-
-dict = {'Sex': 'female', 'Age': 7, 'Name': 'Zara'}
-print (list(dict.values()))
-print (dict.values())
+print(sum([1,0,2]))
