@@ -13,4 +13,10 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('Tuan Hiep TRAN')
 
-print(sum([1,0,2]))
+def updateVariable(x):
+    x += 1
+
+value = 0
+updateVariable(value)
+print(value)
+
