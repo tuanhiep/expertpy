@@ -31,3 +31,28 @@ def indexEqualsValueHelper(array, leftIdx, rightIdx):
         return midIdx
     else:
         return indexEqualsValueHelper(array, leftIdx, midIdx - 1)
+
+
+# Solution 3
+
+def indexEqualsValue(array):
+    # O(log(n)) time | O(log(n)) space - where n is the legth of
+    # the input array
+    return indexEqualsValueHelper(array, 0, len(array) - 1)
+
+
+def indexEqualsValueHelper(array, leftIdx, rightIdx):
+    while leftIdx <= rightIdx:
+        midIdx = leftIdx + (rightIdx - leftIdx) // 2
+        midValue = array[midIdx]
+
+        if midValue < midIdx:
+            leftIdx = midIdx + 1
+        elif midValue == midIdx and midIdx == 0:
+            return midIdx
+        elif midValue == midIdx and array[midIdx - 1] < midIdx - 1:
+            return midIdx
+        else:
+            rightIdx = midIdx - 1
+
+    return -1
