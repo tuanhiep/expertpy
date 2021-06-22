@@ -13,10 +13,12 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('Tuan Hiep TRAN')
 
-def updateVariable(x):
-    x += 1
 
-value = 0
-updateVariable(value)
-print(value)
+array = [
+    [1 , 2, 3],
+    [4, 5, 6],
+    [8, 9, 10]
 
+]
+
+print(2 in map(lambda r : r[1], array))
